@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <title>Portfolio</title>
+    <meta charset="UTF-8">
+    <meta name="author" content="Nikita Khaurov">
+    <meta name="description" content="Portfolio">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" href="icons/favicon.ico">
+    <script src="js/pageLoad.js"></script>
+    <script src="js/LoadAbout.js"></script>
+    <meta name="viewport" content="width=device-width">
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <nav class="navbar">
+          <a class="navbar__link navbar__link--logo" href="">&lt / &gt</a>
+          <a class="navbar__link" href="#about">about</a>
+          <a class="navbar__link" href="#portfolio">portfolio</a>
+          <a class="navbar__link" href="#contact">contact</a>
+        </nav>
+        <div class="header__about">
+          <div class="header__avatar"><img src="/icons/photo.svg"></div>
+          <div class="header__info">
+            <p class="header__name">Nikita Khaurov</p>
+            <p class="header__phrase">Удары в спину всегда наносят те, кто за спиной, а не те, кто спереди...</p>
+          </div>
+          <a class="header__arrow" href="#about"><img src="/icons/hero-arrow.svg"></a>
+        </div>
+      </header>
+      <main class="main">
+        <section id="about" class="about">
+          <p class="about__title title">About Me</p>
+          <div id="about-wrapper" class="about__container">
+            <p class="about__info">
+              <ul>
+                <li>Yandex Middle+ backend dev</li>
+                <li>3rd year ITMO IS student</li>
+              </ul>
+            </p>
+            <pre class="about__code-snippet">function loadAbout() {
+  ...
+}</pre>
+            <button class="about__run-code" onclick="loadAbout()">RUN</button>
+          </div>
+        </section>
+        <section id="portfolio" class="portfolio">
+          <p class="portfolio__title title">Portfolio</p>
+          <div class="portfolio__container">
+            <div class="project">
+              <p class="project__title">Stock Market</p>
+              <p class="project__description">Realtime stock market simulation</p>
+              <div class="project__tags">
+                <p class="project__tags-item">Java</p>
+                <p class="project__tags-item">Postgres</p>
+                <p class="project__tags-item">JDBC</p>
+              </div>
+            </div>
+            <div class="project">
+              <p class="project__title">Online menu service</p>
+              <p class="project__description">Online ordering and order processing</p>
+              <div class="project__tags">
+                <p class="project__tags-item">Python</p>
+                <p class="project__tags-item">FASTApi</p>
+                <p class="project__tags-item">Kafka</p>
+              </div>
+            </div>
+            <div class="project">
+              <p class="project__title">Chat app</p>
+              <p class="project__description">Web chat application</p>
+              <div class="project__tags">
+                <p class="project__tags-item">Go</p>
+                <p class="project__tags-item">CassandraDB</p>
+              </div>
+            </div>
+            <div class="project">
+              <p class="project__title">Web Scraper</p>
+              <p class="project__description">Web Scraper for parsing sites</p>
+              <div class="project__tags">
+                <p class="project__tags-item">Python</p>
+                <p class="project__tags-item">BeautifulSoup</p>
+                <p class="project__tags-item">Jupiter</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="contact" class="contact">
+          <p class="contact__title title">Contact</p>
+          <div class="contact__container">
+            <p class="contact__subtitle">
+              <ul>
+                <li>tg: @foxxxxxxy</li>
+                <li>gmail: ikhaurovnikita@gmail.com</li>
+                <li>gh: Foxxxxxy</li>
+              </ul>
+            </p>
+            <div class="contact__contacts">
+              <a class="contact__link" href=""><img src="icons/contacts/telegram.svg"></a>
+              <a class="contact__link" href=""><img src="icons/contacts/gmail.svg"></a>
+              <a class="contact__link" href=""><img src="icons/contacts/github.svg"></a>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer class="footer">
+        <p class="footer__load">Page load time is  ms</p>
+        <p class="footer__copyright">Nikita Khaurov - 2023</p>
+      </footer>
+    </div>
+  </body>
+</html>
