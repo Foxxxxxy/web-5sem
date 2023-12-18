@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Todo</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/todo.css">
+    <link rel="icon" href="../icons/favicon.ico">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../js/toastr.js"></script>
+    <link href="../css/toastr.css" rel="stylesheet"/>
+
+    <script src="../js/pageLoad.js"></script>
+    <script src="../js/todoList.js"></script>
+    <meta name="viewport" content="width=device-width">
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <nav class="navbar">
+          <a class="navbar__link navbar__link--logo" href="/">&lt / &gt</a>
+          <a class="navbar__link" href="/">Home</a>
+          <a class="navbar__link" href="/about.html">About</a>
+          <a class="navbar__link navbar__link--active" href="/todo.html">Todo</a>
+        </nav>
+      </header>
+      <main class="main">
+        <div class="todo-container">
+          <p class="todo-container__description">Here you can create todo list</p>
+          <form class="todo-container__form" id="todo">
+            <input class="todo-container__input" id="todo-input" type="text" id="todo-input" placeholder="Todo">
+            <button class="todo-container__submit" type="submit">Add</button>
+          </form>
+          <ul class="todo-list" id="todo-list"></ul>
+        </div>
+      </main>
+      <footer class="footer">
+        <p id="load_time" class="footer__load">Page load time is  ms</p>
+        <p class="footer__copyright">Name Surname - 2023</p>
+      </footer>
+    </div>
+  </body>
+</html>
